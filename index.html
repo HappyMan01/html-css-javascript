@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>CatPhotoApp</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <main>
+      <h1>CatPhotoApp</h1>
+      <section>
+        <h2>Cat photo</h2>
+        <!-- TODO: Add link to cat photos-->
+        <p>
+          See more
+          <a href="https://freecatphotoapp.com" target="_blank">cat photos</a>
+          in our gallery
+        </p>
+        <a href="https://freecatphotoapp.com">
+          <img
+            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+            alt="cat photo"
+          />
+        </a>
+      </section>
+      <section>
+        <h2>Cat Lists</h2>
+        <h3>Thing cats love:</h3>
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointer</li>
+          <li>eat</li>
+        </ul>
+        <figure>
+          <img
+            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+            alt="A slice of lasagna on a plate."
+          />
+          <figcaption>Cats love lasagna</figcaption>
+        </figure>
+        <h3>Thing cats hete:</h3>
+        <ol>
+          <li>not don't eat</li>
+          <li>run</li>
+          <figure>
+            <img
+              src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+              alt="five cats look around fileds"
+            />
+            <figcaption>Cats <strong>hete</strong> other cats</figcaption>
+          </figure>
+        </ol>
+      </section>
+      <section>
+        <h2>Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <!-- <label for="username">用户名: </label> -->
+          <!-- <input type="text" name="username" id="username" /> -->
+          <fieldset>
+            <legend>Is your cat is indoor or outdoor cats?</legend>
+            <label
+              ><input id="indoor" type="radio" name="in-outdoor" />
+              Indoor</label
+            >
+            <label
+              ><input id="outdoor" type="radio" name="in-outdoor" />
+              Outdoor</label
+            >
+          </fieldset>
+          <fieldset>
+            <legend>What is cat's personality</legend>
+            <label for="loving">
+              <input
+                id="loving"
+                value="loving"
+                type="checkbox"
+                name="cat-personality"
+              />
+              Loving
+            </label>
+            <label for="lazy">
+              <input
+                id="lazy"
+                value="lazy"
+                type="checkbox"
+                name="cat-personality"
+              />
+              Lazy
+            </label>
+            <label for="energetic">
+              <input
+                id="energetic"
+                value="energetic"
+                type="checkbox"
+                name="cat-personality"
+              />
+              Energetic
+            </label>
+          </fieldset>
+          <input
+            type="text"
+            name="catphotourl"
+            placeholder="Email address"
+            required
+          />
+          <button type="submit">submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>No Copyright - freecodecamp.org</p>
+    </footer>
+  </body>
+</html>
